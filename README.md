@@ -8,7 +8,7 @@ class About extends Me
 {
     private $name = 'Gleb';
     private $surname = 'Doncov';
-    private $place_of_birth = 'Sochi'
+    private $place_of_birth = 'Sochi';
     private $full_age = 24;
     private $work_exp = 3.4;
 
