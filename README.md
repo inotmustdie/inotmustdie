@@ -8,11 +8,11 @@ class About extends Me
 {
     private $name = 'Gleb';
     private $surname = 'Doncov';
-    private $age = 24;
+    private $place_of_birth = 'Sochi'
+    private $full_age = 24;
     private $work_exp = 3.4;
 
-    public function getCurrentWorkplace(): array
-    {
+    public function getCurrentWorkplace() {
         return [
             'workplace' => [
                 'company' => 'ZazuGroup',
@@ -21,8 +21,7 @@ class About extends Me
         ];
     }
 
-    public function getDailyKnowledge(): array
-    {
+    public function getDailyKnowledge() {
         return [
             Php::class,
             Laravel::class,
@@ -33,14 +32,12 @@ class About extends Me
         ];
     }
 
-    public function getFutureGoal(): string
-    {
+    public function getFutureGoal() {
         return 'To contribute to open source.';
     }
 
-    public function getRoundedAgeOfStartWorking(): int
-    {
-        return (int) round( $this->age - $this->work_exp );
+    public function getFullName() {
+        return $this->name . ' ' . $this->surname;
     }
 }
 ```
