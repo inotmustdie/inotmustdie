@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+```php
 <?php
 
 namespace DoncovGleb;
@@ -43,7 +43,7 @@ class About extends Me
         return (int) round( $this->age - $this->work_exp );
     }
 }
-
+```
 <!--
 **inotmustdie/inotmustdie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
